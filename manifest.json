@@ -3,18 +3,13 @@
   "version" : "1.0",
   "description" : "自动填写表单的chrome插件。",
   "permissions": [
-    "browsingData"
+    "browsingData",
+    "storage" 
   ],
   "browser_action": {
      "default_icon": "Talk.png",
      "default_popup": "popup.html"
   },
-
-  "content_scripts":[{
-      "matches" : ["http://www.douban.com/"],
-      "js" : ["fill_up.js"],
-      "run_at" : "document_end"
-    }],
 
   "manifest_version": 2
 }
