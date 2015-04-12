@@ -6,8 +6,15 @@
     "browsingData"
   ],
   "browser_action": {
+     "default_icon": "Talk.png",
      "default_popup": "popup.html"
   },
+
+  "content_scripts":[{
+      "matches" : ["http://www.douban.com/"],
+      "js" : ["fill_up.js"],
+      "run_at" : "document_end"
+    }],
+
   "manifest_version": 2
 }
-
